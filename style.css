@@ -1,0 +1,137 @@
+
+
+body {
+    background-color: #cde4ec;
+    font-family: "Poppins",Arial;
+}
+
+h1 {
+    background-color: #bad7e1;
+    text-align: center;
+    font-size:55px;
+    margin: 70px auto auto auto;
+    padding:20px;
+    border-radius: 10px;
+    max-width:700px
+}
+
+
+h2 {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#anggotaKeluarga {
+    background-color:#DFF6FF;
+    border-radius: 10px;
+    margin: auto;
+    padding: 32px;
+    font-size: 42px;
+    min-width:300px;
+    max-width:800px;
+    font-weight: bold;
+}
+
+.centerLandscape {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    max-width: 700px;
+    height: auto;
+    padding-bottom: 5px;
+  }
+
+.centerPortrait {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width:70%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 5px; 
+  }
+
+.center2 {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width:70%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+.desc {
+    margin-top:40px;
+  }
+
+#loading {
+    width:0px;
+    height:0px;
+    display: relative;
+    margin:-20px;
+    background-color: #cde4ec;
+    animation-name: loading;
+    animation-duration: 2s;
+}
+
+#loading-bar {
+    max-width:0px;
+    height:70px;
+    background-color:white;
+    animation-name: loading-bar;
+    animation-duration: 2s;
+    position: relative;
+    top:0px;
+}
+@keyframes loading-bar {
+    0% {max-width: 0%; top:100px}
+    40% {max-width: 100%; top:200px; height:70px}
+    100% {max-width: 100%; top:0%; height:0px}
+}
+
+@keyframes loading {
+    0% {width:2500px; height:1400px;}
+    40% {width:2500px; height:1400px;}
+    100% {width:2500px; height: 0px;}
+}
+
+.hide {
+    display:none;
+    margin-top:-40px;
+    font-weight: bold;
+}
+
+.tombol_desc {
+    float:right;
+    font-size:34px;
+    transform: rotate(180deg);
+    font-weight:bold;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #a8cad4;
+    border-radius: 10px;
+    padding-left:10px;
+}
+
+.tombol_desc:hover + div.hide {
+    display:block;
+  }
+
+.tombol_desc:hover {
+    transform: rotate(0deg)
+  }
+
+li {
+    padding-top:7px;
+    margin-left:0px;
+}
+
+.instagram {
+    display:block;
+    position:fixed;
+    right:20px;
+    bottom:10px;
+    z-index: 5;
+}
