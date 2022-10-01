@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <title>Alien Study</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta tags-->
+  <meta name="description" content="Website kelas A di SMPN 26 Batam kami memanggil kelas kami Alien Study">
+  <meta name="application-name" content="Alien Study">
+  
+  <meta name="googlebot" content=”notranslate” />
+
+  <!--Social Meida Card-->
+  <meta property:"og:title" content="Gallery">
+  <meta property:"og:type" content="website">
+  <meta property:"og:image" content="logo.png">
+  <meta property:"og:description" content="Alien Study, Kelas A angkatan XX di SMPN 26 Batam merupakan tempat berkumpulnya para alien dan ilmuan, dan katanya kelas paling berisik">
+  <meta property:"site_name" content="Alien Study">
+
+  <link rel="icon" href="logo.png" sizes="48x48" type="image/png">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="gallery/css/gallery.css">
+  <link rel="stylesheet" href="gallery/css/planet-bintang.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+</head>
+
+<body class="font-1 container-fluid">
+  <!--Responsive planet-->
+  <div class="planet" id="planet1"></div>
+  <div class="planet" id="planet2"></div>
+  <div class="planet" id="planet3"></div>
+  <div class="planet" id="planet4"></div>
+  <!--Static planet-->
+  <div class="planet" style="width: 100px; height: 100px; background-color: #827397; top:400px; right: 60px;"></div>
+  <div class="planet" style="width: 150px; height: 150px; background-color: #363062; top:450px; left:10px"></div>
+  <div class="planet" style="width: 210px; height: 210px; background-color: #4D4C7D; top:550px; right:100px;"></div>
+  <div class="planet" style="width: 130px; height: 130px; background-color: #827397; top:570px; left:200px;"></div>
+  <div class="planet" style="width: 140px; height: 140px; background-color: #827397; top:800px; right:10px;"></div>
+  <div class="planet" style="width: 170px; height: 170px; background-color: #4D4C7D; top:1100px; left:30px;"></div>
+  <!--Bintang-->
+  <!--Bintang Bagian Kiri-->
+  <div>
+    <div>
+      <div class="position-absolute" style="left: 50px;">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 300px;left: 150px; transform: rotate(30deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top:650px;left: 200px; transform:rotate(60deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 900px;left: 10px; transform: rotate(-30deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 1200px;left: 300px; transform: rotate(100deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute hide" style="top: 1450px;left: 50px;">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+    </div>
+    <!--Bintang yang Show kalo pengurus kelas atau angggota kelas di klik-->
+    <div class="position-absolute" style="top:1450px" id="container-bintang-hide-kiri">
+      <div class="hide" id="bintang-hide-kiri1">
+        <div class="position-absolute" style="left: 50px;">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 300px;left: 150px; transform: rotate(30deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top:650px;left: 200px; transform:rotate(60deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+      </div>
+      <div class="hide" id="bintang-hide-kiri2">
+        <div class="position-absolute" style="top: 900px;left: 200px; transform: rotate(0deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1200px;left: 300px; transform: rotate(100deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1450px;left: 50px;">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Bintang Bagian Kanan-->
+  <div>
+    <div>
+      <div class="position-absolute" style="right: 50px;">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 300px;right: 60px; transform: rotate(30deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top:650px;right: 100px; transform:rotate(60deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 900px;right: 10px; transform: rotate(-30deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 1200px;right: 50px; transform: rotate(100deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute hide" style="top: 1450px;right: 50px;">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+    </div>
+    <!--Bintang yang Show kalo pengurus kelas atau angggota kelas di klik-->
+    <div class="position-absolute" style="top:1450px; right:10px" id="container-bintang-hide-kanan">
+      <div class="hide" id="bintang-hide-kanan1">
+        <div class="position-absolute" style="right: 50px;">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 300px;right: 100px; transform: rotate(30deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top:650px;right: 40px; transform:rotate(60deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+      </div>
+      <div class="hide" id="bintang-hide-kanan2">
+        <div class="position-absolute" style="top: 900px;right: 70px; transform: rotate(0deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1200px;right: 30px; transform: rotate(100deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1450px;right: 50px;">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <header class="z-index">
+    <h1 class="text-center p-3 pb-1 font-2 display-4">
+      Alien Study
+    </h1>
+
+    <!-- place navbar here -->
+    <nav class="text-highlight nav justify-content-center border-bottom border-dark fs-5">
+      <a class="nav-link font-1" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link font-1 active" href="gallery.html">Gallery</a>
+      <a class="nav-link font-1" href="https://www.instagram.com/alienstudy_/" style="color:#ffcb7c;border-color: #ffcb7c;"><img src="logo_ig.png" alt="logo Instagram" width="40px"> alienstudy_</a>
+    </nav>
+  </header>
+
+  <main class="mt-3">
+
+    <div class="text-highlight row z-index p-3 gallery-parent">
+      <div class="col-6 col-sm-4 p-0">
+        <img src="gallery/img/1.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/2.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/3.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/4.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+      </div>
+      <div class="col-6 col-sm-4 p-0">
+        <img src="gallery/img/6.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/5.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/7.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+      </div>
+      <div class="col-6 col-sm-4 p-0">
+        <img src="gallery/img/9.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/8.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/10.webp" alt="Foto-foto kelas A" class="w-100 p-1 d-sm-block d-none">
+      </div>
+      <div class="col-6 col-sm-4 d-block d-sm-none">
+        <img src="gallery/img/10.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+      </div>
+      <div class="col-12 col-sm-8">
+        <img src="gallery/img/12.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+        <img src="gallery/img/13.webp" alt="Foto-foto kelas A" class="p-1" loading="lazy">
+      </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <footer class="bg-dark z-index" >
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://kit.fontawesome.com/6800078241.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+
+  <script src="gallery/js/jquery.min.js"></script>
+  <script src="gallery/js/script.js"></script>
+
+  
+</body>
+
+</html>

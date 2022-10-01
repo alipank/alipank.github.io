@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <title>Alien Study</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta tags-->
+  <meta name="description" content="Website kelas A di SMPN 26 Batam kami memanggil kelas kami Alien Study">
+  <meta name="application-name" content="Alien Study">
+  
+  <meta name="googlebot" content=”notranslate” />
+
+  <!--Social Meida Card-->
+  <meta property:"og:title" content="Home">
+  <meta property:"og:type" content="website">
+  <meta property:"og:image" content="logo.png">
+  <meta property:"og:description" content="Alien Study, Kelas A angkatan XX di SMPN 26 Batam merupakan tempat berkumpulnya para alien dan ilmuan, dan katanya kelas paling berisik">
+  <meta property:"site_name" content="Alien Study">
+
+  <link rel="icon" href="logo.png" sizes="48x48" type="image/png">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="index/css/home.css">
+  <link rel="stylesheet" href="index/css/planet-bintang.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+</head>
+
+<body class="font-1 container-fluid">
+  <!--Responsive planet-->
+  <div class="planet" id="planet1"></div>
+  <div class="planet" id="planet2"></div>
+  <div class="planet" id="planet3"></div>
+  <div class="planet" id="planet4"></div>
+  <!--Static planet-->
+  <div class="planet" style="width: 100px; height: 100px; background-color: #827397; top:400px; right: 60px;"></div>
+  <div class="planet" style="width: 150px; height: 150px; background-color: #363062; top:450px; left:10px"></div>
+  <div class="planet" style="width: 210px; height: 210px; background-color: #4D4C7D; top:550px; right:100px;"></div>
+  <div class="planet" style="width: 130px; height: 130px; background-color: #827397; top:570px; left:200px;"></div>
+  <div class="planet" style="width: 140px; height: 140px; background-color: #827397; top:800px; right:10px;"></div>
+  <div class="planet" style="width: 170px; height: 170px; background-color: #4D4C7D; top:1100px; left:30px;"></div>
+  <!--Bintang-->
+  <!--Bintang Bagian Kiri-->
+  <div>
+    <div>
+      <div class="position-absolute" style="left: 50px;">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 300px;left: 150px; transform: rotate(30deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top:650px;left: 200px; transform:rotate(60deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 900px;left: 10px; transform: rotate(-30deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 1200px;left: 300px; transform: rotate(100deg);">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+      <div class="position-absolute hide" style="top: 1450px;left: 50px;">
+        <div class="bintang" style="top: 60px;left:100px;"></div>
+        <div class="bintang" style="top: 140px;left:50px;"></div>
+        <div class="bintang" style="top: 150px;left:90px;"></div>
+        <div class="bintang" style="top: 170px;left:70px;"></div>
+        <div class="bintang" style="top: 250px;left:120px;"></div>
+      </div>
+    </div>
+    <!--Bintang yang Show kalo pengurus kelas atau angggota kelas di klik-->
+    <div class="position-absolute" style="top:1450px" id="container-bintang-hide-kiri">
+      <div class="hide" id="bintang-hide-kiri1">
+        <div class="position-absolute" style="left: 50px;">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 300px;left: 150px; transform: rotate(30deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top:650px;left: 200px; transform:rotate(60deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+      </div>
+      <div class="hide" id="bintang-hide-kiri2">
+        <div class="position-absolute" style="top: 900px;left: 200px; transform: rotate(0deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1200px;left: 300px; transform: rotate(100deg);">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1450px;left: 50px;">
+          <div class="bintang" style="top: 60px;left:100px;"></div>
+          <div class="bintang" style="top: 140px;left:50px;"></div>
+          <div class="bintang" style="top: 150px;left:90px;"></div>
+          <div class="bintang" style="top: 170px;left:70px;"></div>
+          <div class="bintang" style="top: 250px;left:120px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Bintang Bagian Kanan-->
+  <div>
+    <div>
+      <div class="position-absolute" style="right: 50px;">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 300px;right: 60px; transform: rotate(30deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top:650px;right: 100px; transform:rotate(60deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 900px;right: 10px; transform: rotate(-30deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute" style="top: 1200px;right: 50px; transform: rotate(100deg);">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+      <div class="position-absolute hide" style="top: 1450px;right: 50px;">
+        <div class="bintang" style="top: 60px;right:100px;"></div>
+        <div class="bintang" style="top: 140px;right:50px;"></div>
+        <div class="bintang" style="top: 150px;right:90px;"></div>
+        <div class="bintang" style="top: 170px;right:70px;"></div>
+        <div class="bintang" style="top: 250px;right:120px;"></div>
+      </div>
+    </div>
+    <!--Bintang yang Show kalo pengurus kelas atau angggota kelas di klik-->
+    <div class="position-absolute" style="top:1450px; right:10px" id="container-bintang-hide-kanan">
+      <div class="hide" id="bintang-hide-kanan1">
+        <div class="position-absolute" style="right: 50px;">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 300px;right: 100px; transform: rotate(30deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top:650px;right: 40px; transform:rotate(60deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+      </div>
+      <div class="hide" id="bintang-hide-kanan2">
+        <div class="position-absolute" style="top: 900px;right: 70px; transform: rotate(0deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1200px;right: 30px; transform: rotate(100deg);">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+        <div class="position-absolute" style="top: 1450px;right: 50px;">
+          <div class="bintang" style="top: 60px;right:100px;"></div>
+          <div class="bintang" style="top: 140px;right:50px;"></div>
+          <div class="bintang" style="top: 150px;right:90px;"></div>
+          <div class="bintang" style="top: 170px;right:70px;"></div>
+          <div class="bintang" style="top: 250px;right:120px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--KERJAIN YAA-->
+  
+  <header class="z-index">
+    <h1 class="text-center p-3 pb-1 font-2 display-4">
+      Alien Study
+    </h1>
+
+    <!-- place navbar here -->
+    <nav class="text-highlight nav justify-content-center border-bottom border-dark fs-5">
+      <a class="nav-link font-1 active" href="index.html">Home</a>
+      <a class="nav-link font-1" href="gallery.html" aria-current="page">Gallery</a>
+      <a class="nav-link font-1" href="https://www.instagram.com/alienstudy_/" style="color:#ffcb7c;border-color: #ffcb7c;"><img src="logo_ig.png" alt="logo Instagram" width="40px"> alienstudy_</a>
+    </nav>
+  </header>
+
+  <main class="fs-5 mt-3">
+
+    <div class="p-3 mt-3 mb-5 fs-3 z-index text-highlight">
+      <p>Kelas A angkatan XX tempat berkumpulnya para Alien dan ilmuan, dan katanya kelas paling berisik.
+        
+      </p>
+    </div>
+
+    <div class="text-center z-index">
+
+      <h2 class=" p-3 font-3 display-5 container-toggle w-100 text-center rounded-0">Wali Kelas</h2>
+
+      <!--GURU-->
+      <div class="row text-highlight m-2">
+        <figure class="col-sm-6 col-12">
+          <p class="m-3 pt-2 h1">VII A</p>
+          <img src="index/img/sample.webp" alt="Ibu Guru" class="rounded w-75">
+          <figcaption class="fs-2 p-1">Eva Sekriyanti</figcaption>
+        </figure>
+        <figure class="col-sm-6 col-12">
+          <p class="m-3 pt-2 h1">VIII A</p>
+          <img src="index/img/sample.webp" alt="Bapak Guru" class="rounded w-75">
+          <figcaption class="fs-2 p-1">Rinaldo</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!--ngebuat perus kelasnya bisa toggle show dan hide-->
+    <div class="mt-4 mb-2 font-3 z-index d-flex justify-content-center">
+      <div class="container-toggle toggle" id="toggle1">
+        <h2 class="display-5 p-3 text-center" id="pengurus-kelas">
+          Pengurus Kelas
+        </h2>
+        <div class="display-4 my-auto toggle-indicator" id="toggle-indicator1">></div>
+      </div>
+    </div>
+
+    <!--KETUA KELAS-->
+    <div class="font-1 z-index hide mb-2 text-highlight m-2 p-3" id="toggle-hide1">
+      <div class="row g-0 fs-2 " id="ketua-kelas">
+        <h3 class="m-0 pb-3 pt-4 text-center border-bottom font-2 fs-1">Ketua Kelas</h3>
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-bottom">7A</div>
+        
+        <div class="col-10 ps-3 border-bottom border-start">Muhammad Syauqi Maulana</div>
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-bottom">8A</div>
+        
+        <div class="col-10 ps-3 border-bottom border-start">Raudatul Amaliyah</div>
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-bottom">9A</div>
+        <div class="col-10 ps-3 border-bottom border-start">??????????</div>
+      </div>
+      <!--WAKIL KETUA-->
+      <div class="row g-0 fs-2 " id="wakil-kelas">
+        <h3 class="m-0 pb-3 pt-4 text-center border-bottom font-2 fs-1">Wakil Ketua</h3>
+        <div class="ps-sm-2 ps-0 pe-1 col-2">7A</div>
+        <div class="col-10 ps-3 border-bottom border-start">Putra Ardi Hansya</div>
+        <div class="col-10 ps-3 border-bottom offset-2 border-start">Faris Arfa Dias Putra</div>
+        
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-top">8A</div>
+        <div class="col-10 ps-3 border-bottom border-start">Muhammad Desta Aditya</div>
+        <div class="col-10 ps-3 border-bottom offset-2 border-start">Nayla Zakiyah Gusrianto</div>
+        
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-top">9A</div>
+        <div class="col-10 ps-3 border-bottom border-start">???????????</div>
+        <div class="col-2 border-bottom"></div>
+        <div class="col-10 ps-3 border-bottom border-start">????????????</div>
+      </div>
+      <!--SEKRETARIS-->
+      <div class="row g-0 fs-2" id="sekretaris">
+        <h3 class="m-0 pb-3 pt-4 border-bottom font-2 text-center fs-1">Sekretaris</h3>
+        <div class="ps-sm-2 ps-0 pe-1 col-2">7A</div>
+        <div class="col-10 ps-3 border-bottom border-start">Talitha Febrina Helga</div>
+        
+        <div class="ps-sm-2 ps-0 pe-1 col-2">8A</div>
+        <div class="col-10 ps-3 border-bottom border-start">Filia Raisha Sayidatina</div>
+        
+        <div class="ps-sm-2 ps-0 pe-1 col-2 border-bottom">9A</div>
+        <div class="col-10 ps-3 border-bottom border-start">??????????</div>
+      </div>
+    </div>
+
+    <!--ANGGOTA KELAS-->
+    <div class="mt-4 mb-2 font-3 z-index d-flex justify-content-center ">
+      <div class="container-toggle toggle" id="toggle2">
+        <h2 class="display-5 p-3 text-center" id="pengurus-kelas">
+          Anggota Kelas
+        </h2>
+        <div class="display-4 my-auto toggle-indicator" id="toggle-indicator2">></div>
+      </div>
+    </div>
+
+    <div class="font-1 z-index mb-2 hide text-highlight m-2 p-3" id="toggle-hide2">
+      <div class="fs-2 d-block text-truncate" id="anggota-kelas">
+        <div class="">Ahmad Alief Almujaddied</div>
+        <div class="">Anak Dwiatha Wiryawan</div>
+        <div class="">Aprilia Rohmatul Nur Azizah</div>
+        <div class="">Aulia</div>
+        <div class=" border-bottom">Avindita Maulidya Nur Ufa</div>
+        <div class="">Balya Sakura</div>
+        <div class="">Bunga Aprilia Siagian</div>
+        <div class="">Celyne Celay</div>
+        <div class="">Chelsea Malicca A Farhan</div>
+        <div class=" border-bottom">Cut Masyithah</div>
+        <div class="">Dela Natalia situmorang</div>
+        <div class="">Edward Amos Siahaan</div>
+        <div class="">Fadhli Mahardika</div>
+        <div class="">Faris Arfa Dias Putra</div>
+        <div class=" border-bottom">Ferris Erland Wijaya</div>
+        <div class="">Filia Raisha Sayidatina</div>
+        <div class="">Gesta Iqone Lifdaya Sinaga</div>
+        <div class="">Giofanni Octovianus Habeahan</div>
+        <div class="">Hanna Ramadhani</div>
+        <div class=" border-bottom">Hesyekiel Alexsandro Sinaga</div>
+        <div class="mt-3 d-block text-truncate ms-3 d-block text-truncate">
+          <button class="toggle" style="transform: rotate(0deg);" id="load-more">Load More</button>
+        </div>
+        <div class="hide" id="load-more-hide">
+          <div class="">Jonatan Sitompul</div>
+          <div class="">Keishya Gladys Silitonga</div>
+          <div class="">Maria Martha Hadisasmita</div>
+          <div class="">Martin Damora Simanjuntak</div>
+          <div class=" border-bottom">Muhammad Adrian Syahriza</div>
+          <div class="">Muhammad Desta Aditya</div>
+          <div class="">Muhammad Fathurrahman Al Arsyad</div>
+          <div class="">Muhammad Rizqi</div>
+          <div class="">Muhammad Syauqi Maulana</div>
+          <div class=" border-bottom">Nayla Zakiyah Gustianto</div>
+          <div class="">Nisa Hilmatul Aulia Za...</div>
+          <div class="">Nurkholis Panji</div>
+          <div class="">Putra Ardi Hansya</div>
+          <div class="">Raffa Geovani Putra Husni</div>
+          <div class=" border-bottom">Rafha Kusuma Anugrah</div>
+          <div class="">Rafhi Satria Anugrah</div>
+          <div class="">Ragina Kezya Rehulin...</div>
+          <div class="">Raudatul Amaliyah</div>
+          <div class="">Romual Girelly Situmorang</div>
+          <div class=" border-bottom">Sari Monalisa Sormin</div>
+          <div class="">Talita Ramadhani</div>
+          <div class="">Talitha Febrina Helga</div>
+          <div class="">Vera Stefanie Situmeang</div>
+          <div class="">Yohana Adelia</div>
+          <div class="mt-3 d-block text-truncate ms-3 d-block text-truncate">
+            <button class="toggle" style="transform: rotate(0deg);" id="load-less">Load Less</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="display-5 text-center bg-dark p-2 font-2 my-5 rounded-2"><q>ANDA YAKIN MAKA ANDA BISA</q></p>
+    <!--Buat link ke Gallery-->
+    <a href="gallery.html" class="z-index text-center our-gallery">Our Gallery <i class="fa-solid fa-arrow-right ps-3 "></i></a>
+
+    
+
+  </main>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://kit.fontawesome.com/6800078241.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+
+  <script src="index/js/jquery.min.js"></script>
+  <script src="index/js/script.js"></script>
+
+  
+</body>
+
+</html>
